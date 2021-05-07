@@ -1,0 +1,24 @@
+<h1>Contact Number</h1>
+
+<h2>Save your friend's number here</h2>
+<form>
+  <div class="field">
+    <label for="username">Name</label>
+    <input type="text" id="username" placeholder="name" 
+      name="username"
+      [(ngModel)]="username"
+    >
+  </div>
+
+  <div class="field">
+    <label for="number">Number</label>
+    <input type="text" id="number" placeholder="number"
+      name="number"
+      [(ngModel)]="number"
+    >
+  </div>
+
+  <button (click)="saveContact(username, number)">Save</button>
+</form>
+
+<app-search></app-search>

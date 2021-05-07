@@ -1,0 +1,12 @@
+<h3>Find your saved number here!</h3>
+
+<input type="text" placeholder="Search by name" [(ngModel)]="searchInput" (ngModelChange)="searchContact()">
+
+<div class="search-result">
+<ul>
+    <li *ngFor="let result of searchResults">
+        <p>{{result.name}}</p>
+        <p>{{result.number}}</p>
+    </li>
+</ul>
+</div>
